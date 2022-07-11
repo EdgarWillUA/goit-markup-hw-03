@@ -111,6 +111,7 @@ p {
 /* hero section */
 
 .hero {
+  margin-bottom: 94px;
   height: 600px;
   background-color: var(--dark-bg-color);
 }
@@ -143,6 +144,10 @@ p {
 
 /* features section */
 
+.features-container {
+  margin-bottom: 94px;
+}
+
 .features-list {
   display: flex;
   gap: 30px;
@@ -170,7 +175,16 @@ p {
 
 /* work section */
 
+.work-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
 .work-title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -184,12 +198,20 @@ p {
 }
 
 .team-title {
+  display: inline-block;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--main-txt-cl);
 }
 
+
+.team-list {
+  display: flex;
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
