@@ -30,6 +30,14 @@ body {
   color: var(--main-txt-cl);
 }
 
+/* card set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 /* reset styles */
 
 h1,
@@ -42,10 +50,15 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
 }
+
 .list {
   list-style: none;
   padding: 0;
@@ -217,9 +230,21 @@ p {
 .team-list {
   display: flex;
   gap: 30px;
+  padding-bottom: 94px;
 }
+
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-member {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -230,7 +255,6 @@ p {
 .team-role {
   line-height: calc(19 / 16);
   color: var(--second-txt-cl);
-  padding-bottom: 124px;
 }
 
 /* footer section */
@@ -282,7 +306,17 @@ p {
 /* portfolio HTML */
 /* filter section */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
 .filter-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -299,7 +333,28 @@ p {
   background-color: #2196f3;
 }
 
+.portfolio-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+  padding-right: 24px;
+  border-top: none;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
 .portfolio-project {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
