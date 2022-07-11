@@ -17,11 +17,30 @@
   --hover-txt-color: #2196f3;
 }
 
+/*  base styles */
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
 }
+
 /* reset styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 .link {
   text-decoration: none;
@@ -29,9 +48,17 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* header section */
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  /* height: 80px; */
+}
 
 .header-logo {
   font-family: var(--secondery-font);
@@ -40,10 +67,22 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #000000;
+  margin-left: 215px;
+  margin-right: 93px;
+  padding: 32px 0;
 }
 
 .acсent-logo {
   color: #2196f3;
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
 }
 
 .header-item {
@@ -54,24 +93,17 @@ body {
   color: var(--main-txt-cl);
 }
 
-.header-list-cont {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--second-txt-cl);
+.header-link {
+  padding: 32px 0;
 }
 
-.header-email:hover,
-.header-email:focus,
-.header-phone:hover,
-.header-phone:focus,
 .header-link:hover,
 .header-link:focus,
 .header-logo:hover,
 .header-logo:focus {
   color: var(--hover-txt-color);
 }
+
 .header-link-current {
   color: var(--hover-txt-color);
 }
@@ -79,10 +111,13 @@ body {
 /* hero section */
 
 .hero {
+  height: 600px;
   background-color: var(--dark-bg-color);
 }
 
+
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -108,6 +143,11 @@ body {
 
 /* features section */
 
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -116,11 +156,17 @@ body {
   text-transform: uppercase;
 }
 
+.features-subtitle{
+  margin-bottom: 20px;
+}
+
 .features-desc {
+  width: 270px;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--second-txt-cl);
 }
+
 
 /* work section */
 
@@ -170,20 +216,20 @@ body {
 }
 
 .footer-info {
-    font-style: normal;
+  font-style: normal;
 }
 
 .footer-addres {
   font-size: 14px;
   line-height: calc(24 / 14);
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .footer-email,
 .footer-phone {
   font-size: 14px;
   line-height: 24px;
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-email:hover,
