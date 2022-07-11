@@ -57,7 +57,6 @@ p {
 .header-conteiner {
   display: flex;
   align-items: center;
-  /* height: 80px; */
 }
 
 .header-logo {
@@ -69,7 +68,8 @@ p {
   color: #000000;
   margin-left: 215px;
   margin-right: 93px;
-  padding: 32px 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .acсent-logo {
@@ -111,13 +111,18 @@ p {
 /* hero section */
 
 .hero {
-  margin-bottom: 94px;
-  height: 600px;
+  text-align: center;
   background-color: var(--dark-bg-color);
+  margin-bottom: 94px;
 }
 
+.hero-conteiner {
+  display: inline-block;
+  margin: 200px 0;
+}
 
 .hero-title {
+  margin-bottom: 30px;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -127,6 +132,10 @@ p {
 }
 
 .hero-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -144,16 +153,14 @@ p {
 
 /* features section */
 
-.features-container {
-  margin-bottom: 94px;
-}
-
 .features-list {
   display: flex;
   gap: 30px;
+  margin-bottom: 94px;
 }
 
 .features-subtitle {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -161,17 +168,13 @@ p {
   text-transform: uppercase;
 }
 
-.features-subtitle{
-  margin-bottom: 20px;
-}
-
 .features-desc {
+  padding-right: 20px;
   width: 270px;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--second-txt-cl);
 }
-
 
 /* work section */
 
@@ -197,22 +200,27 @@ p {
   background-color: #f5f4fa;
 }
 
+.team-conteiner {
+  text-align: center;
+}
+
 .team-title {
   display: inline-block;
-  margin-top: 94px;
   margin-bottom: 50px;
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--main-txt-cl);
+  padding-top: 94px;
 }
-
 
 .team-list {
   display: flex;
+  gap: 30px;
 }
 .team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -222,6 +230,7 @@ p {
 .team-role {
   line-height: calc(19 / 16);
   color: var(--second-txt-cl);
+  padding-bottom: 124px;
 }
 
 /* footer section */
@@ -229,7 +238,13 @@ p {
 .footer {
   background-color: var(--dark-bg-color);
 }
+.footer-item {
+  margin: 9px 0;
+}
 .footer-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+  display: inline-block;
   font-family: var(--secondery-font);
   font-weight: 700;
   font-size: 26px;
@@ -238,6 +253,7 @@ p {
 }
 
 .footer-info {
+  padding-bottom: 60px;
   font-style: normal;
 }
 
