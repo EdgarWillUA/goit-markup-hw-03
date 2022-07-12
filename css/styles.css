@@ -32,11 +32,11 @@ body {
 
 /* card set */
 
-.card-set {
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
+} */
 
 /* reset styles */
 
@@ -54,6 +54,11 @@ img {
   display: block;
 }
 
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+ }
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -70,6 +75,7 @@ img {
 .header-conteiner {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-logo {
@@ -108,6 +114,7 @@ img {
 
 .header-link {
   padding: 32px 0;
+  display: block;
 }
 
 .header-link:hover,
@@ -124,14 +131,14 @@ img {
 /* hero section */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--dark-bg-color);
-  margin-bottom: 94px;
-}
+  }
 
 .hero-conteiner {
   display: inline-block;
-  margin: 200px 0;
 }
 
 .hero-title {
@@ -166,11 +173,24 @@ img {
 
 /* features section */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
-}
+  }
 
 .features-subtitle {
   margin-bottom: 10px;
@@ -191,14 +211,18 @@ img {
 
 /* work section */
 
+.work {
+  padding-top: 0;
+  }
+
 .work-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
-}
+ }
 
 .work-title {
   margin-bottom: 50px;
+  margin-top: 94px;
   text-align: center;
 
   font-weight: 700;
@@ -224,14 +248,12 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--main-txt-cl);
-  padding-top: 94px;
-}
+  }
 
 .team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
-}
+  }
 
 .team-wrapper {
   padding-top: 30px;
@@ -310,9 +332,8 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
-  margin-top: 94px;
-}
+  padding-bottom: 50px;
+    }
 
 .filter-btn {
   border-radius: 4px;
@@ -347,8 +368,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
-}
+  }
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
