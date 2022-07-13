@@ -297,12 +297,17 @@ img {
   color: #ffffff;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-info {
   font-style: normal;
 }
 
 
 .footer-addres {
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: #ffffff;
