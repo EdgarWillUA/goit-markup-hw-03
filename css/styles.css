@@ -206,6 +206,7 @@ img {
 }
 
 .features-desc {
+  letter-spacing: 0.03em;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--second-txt-cl);
